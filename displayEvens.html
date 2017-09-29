@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Sample</h1>
+    <form name="numberFun" class="form-inline" onsubmit="return false"> <!-- onsubmit="return validateItems();"  onreset="resetForm();" > -->
+            <div class="form-group">
+                <label for="startingNumber">Starting Number</label>
+                <input type="number" class="form-control" id="startingNumber">
+            </div>
+        </br>
+    </br>
+            <div class="form-group">
+                <label for="endingNumber">Ending Number</label>
+                <input type="number" class="form-control" id="endingNumber">
+            </div>
+        </br>
+    </br> 
+            <div class="form-group">
+                <label for="step">Step</label>
+                <input type="number" class="form-control" id="step">
+            </div>
+    </br>
+</br>         
+            <button type="display" id="displayButton" class="btn btn-default">Display Evens</button>
+    </form>
+</br>
+<p>Here are the even numbers between "startingNumber" and "endingNumber" by "step"'s:</p>
+<div id="answerDiv"></div>
+</div>
+
+</body>
+</html>
