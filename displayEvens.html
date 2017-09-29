@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <h1>Sample</h1>
-    <form name="numberFun" class="form-inline" onsubmit="return false"> <!-- onsubmit="return validateItems();"  onreset="resetForm();" > -->
+    <form name="displayEvens" class="form-inline" onsubmit="return validateItems();">
             <div class="form-group">
                 <label for="startingNumber">Starting Number</label>
                 <input type="number" class="form-control" id="startingNumber">
@@ -27,12 +27,11 @@
             </div>
     </br>
 </br>         
-            <button type="display" id="displayButton" class="btn btn-default">Display Evens</button>
+            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
     </form>
 </br>
 <p>Here are the even numbers between "startingNumber" and "endingNumber" by "step"'s:</p>
 <div id="answerDiv"></div>
 </div>
-
 </body>
 </html>
